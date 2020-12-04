@@ -10,6 +10,10 @@
 @import "./burger.scss";
 @import "./nav.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body > * {
   font-family: TTNormsPro, Roboto, sans-serif;
   color: $main-text-color;
