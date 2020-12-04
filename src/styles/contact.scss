@@ -1,0 +1,117 @@
+.contact {
+  background: $background-color;
+  font-size: 14px;
+  &__container {
+    padding-top: 38px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__phone {
+    display: block;
+  }
+
+  &__address,
+  &__email {
+    display: block;
+    margin-bottom: 16px;
+    line-height: 18px;
+
+  }
+
+  &__address {
+    display: block;
+    max-width: 158px;
+  }
+
+  &__address,
+  &__email,
+  &__phone,
+  &__linkedin,
+  &__instagram,
+  &__xing {
+    transition: transform 200ms ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 170px;
+    margin-bottom: 35px;
+  }
+
+}
+
+@media (min-width: 498px) {
+  .contact {
+    &__container {
+      padding: 71px 80px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    &__container {
+      padding: 74px 82px 35px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid white;
+    }
+    &__title {
+      margin-bottom: 240px;
+    }
+    &__address,
+    &__phone,
+    &__email,
+    &__row {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    &__email {
+      margin-bottom: 26px;
+    }
+
+    &__address {
+      max-width: 195px;
+      margin-bottom: 26px;
+    }
+
+    &__row {
+      min-width: 220px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact {
+    &__container {
+      padding: 63px 80px 43px;
+    }
+    &__title {
+      margin-bottom: 165px;
+    }
+  }
+}

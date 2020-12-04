@@ -1,0 +1,135 @@
+.feedback {
+  &__input,
+  &__textarea {
+    color: #1c242c;
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  &__input {
+    margin-bottom: 12px;
+    transition: transform 200ms ease;
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+
+  &__textarea {
+    min-height: 115px;
+    margin-bottom: 10px;
+    transition: transform 200ms ease;
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+
+  &__checkbox {
+    width: 16px;
+    height: 16px;
+    margin: 0 10px 0 0;
+    border-radius: 0;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__agreement {
+    display: flex;
+    margin-bottom: 13px;
+    font-size: 7px;
+    &--text {
+      max-width: 135px;
+    }
+  }
+
+  &__button {
+    width: 60px;
+    margin-bottom: 37px;
+
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  &__button,
+  &__agreement--text {
+    cursor: pointer;
+    transition: transform 200ms ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .feedback {
+    min-width: 300px;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 789px) {
+  .feedback {
+    min-width: 300px;
+    padding-top: 10px;
+
+    &__input,
+    &__textarea {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    &__input {
+      height: 50px;
+      margin-bottom: 22px;
+      padding: 20px 17px;
+    }
+
+    &__textarea {
+      height: 220px;
+      margin-bottom: 22px;
+      padding: 5px 17px;
+    }
+    &__agreement {
+      margin-bottom: 13px;
+      font-size: 14px;
+      line-height: 20px;
+      &--text {
+        min-width: 255px;
+      }
+    }
+    &__button {
+      font-size: 36px;
+      line-height: 38px;
+    }
+    &__checkbox {
+      height: 33px;
+      width: 33px;
+      margin-right: 15px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .feedback {
+    min-width: 622px;
+    &__top,
+    &__bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__name,
+    &__email {
+      width: 295px;
+    }
+    &__textarea {
+      height: 290px;
+      margin-bottom: 19px;
+    }
+    &__button {
+      width: 124px;
+    }
+  }
+}

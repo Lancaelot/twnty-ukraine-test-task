@@ -1,6 +1,159 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
+@mixin clients-desktop {
+  &__brands {
+    max-width: 1302px;
+    flex-direction: row;
+  }
+  &__tilray,
+  &__bauer,
+  &__subaru,
+  &__audi,
+  &__apple,
+  &__bench,
+  &__logo {
+    width: 190px;
+    height: 90px;
+    margin: 0;
+  }
+  &__tilray {
+    background: url(../../src/icons/clients/l/tilray-l.png) center / contain no-repeat;
+
+  }
+
+  &__apple {
+    background: url(../../src/icons/clients/l/apple-l.png)  center / contain no-repeat;
+
+  }
+  &__bauer {
+    background: url(../../src/icons/clients/l/bauer-l.png) center /contain no-repeat;
+
+  }
+  &__audi {
+    background: url(../../src/icons/clients/l/audi-l.png) center / contain no-repeat;
+
+  }
+  &__subaru {
+    background: url(../../src/icons/clients/l/subaru-l.png) center /contain no-repeat;
+
+  }
+
+  &__bench {
+    background: url(../../src/icons/clients/l/bench-l.png) center / contain no-repeat;
+
+  }
+}
+
+@mixin clients-tablet {
+  &__brands {
+    max-width: 530px;
+  }
+
+  &__logo {
+    &--tilray {
+      order: 1;
+    }
+    &--bauer {
+      order: 3;
+    }
+    &--subaru {
+      order: 4;
+    }
+    &--audi {
+      order: 6;
+    }
+    &--apple {
+      order: 2;
+      margin-top: 7px;
+    }
+    &--bench {
+      order: 5;
+    }
+  }
+
+  &__tilray,
+  &__bauer,
+  &__subaru,
+  &__audi,
+  &__apple,
+  &__bench,
+  &__logo {
+    width: 160px;
+    height: 60px;
+  }
+  &__tilray {
+    margin-top: 7px;
+    background: url(../../src/icons/clients/m/tilray-m.png) center / contain no-repeat;
+
+  }
+
+  &__apple {
+    background: url(../../src/icons/clients/m/apple-m.png)  center / contain no-repeat;
+
+  }
+  &__bauer {
+    margin: 13px 0 0;
+    background: url(../../src/icons/clients/m/bauer-m.png) center /contain no-repeat;
+
+  }
+  &__audi {
+    margin: 18px 0 0;
+    background: url(../../src/icons/clients/audi-s.png) center / contain no-repeat;
+
+  }
+  &__subaru {
+    background: url(../../src/icons/clients/m/subaru-m.png) center /contain no-repeat;
+
+  }
+
+  &__bench {
+    background: url(../../src/icons/clients/m/bench-m.png) center / contain no-repeat;
+
+  }
+}
+
+@mixin clients-phone {
+  &__brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  &__tilray,
+  &__bauer,
+  &__subaru,
+  &__audi,
+  &__apple,
+  &__bench {
+    width: 125px;
+    height: 50px;
+    margin-left: 7px;
+  }
+  &__subaru,
+  &__bauer,
+  &__audi {
+    width: 125px;
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  &__tilray {
+    background: url(../../src/icons/clients/s/tilray-s.png) center / contain no-repeat;
+  }
+
+  &__apple {
+    background: url(../../src/icons/clients/s/apple-s.png)  center / contain no-repeat;
+  }
+  &__bauer {
+    background: url(../../src/icons/clients/s/bauer-s.png) center /contain no-repeat;
+  }
+  &__audi {
+    background: url(../../src/icons/clients/s/audi-s.png) center / contain no-repeat;
+  }
+  &__subaru {
+    background: url(../../src/icons/clients/s/subaru-s.png) center /contain no-repeat;
+  }
+
+  &__bench {
+    background: url(../../src/icons/clients/s/bench-s.png) center / contain no-repeat;
+    margin-top: 15px;
   }
 }

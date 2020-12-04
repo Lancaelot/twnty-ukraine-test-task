@@ -1,0 +1,111 @@
+.header {
+  background: center url("../images/background.png");
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+
+    position: relative;
+    padding: 35px 40px 37px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__nav {
+    display: none;
+  }
+
+  &__arrow {
+    display: block;
+    width: 10px;
+    height: 30px;
+    background: url("../icons/arrow/arrow-s.png") center no-repeat;
+  }
+
+  &__logo {
+    width: 72px;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    word-spacing: 2px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 17px;
+    word-spacing: 2px;
+    line-height: 22px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    background: url(../images/background/background-m.png) left / cover no-repeat;
+
+    &__logo {
+      width: 108px;
+      height: 45px;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__container {
+      padding: 50px 80px 80px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__arrow {
+      width: 15px;
+      height: 60px;
+      background: url("../icons/arrow/arrow-m.png") center  no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+@media (min-width: 1439px) {
+  .header {
+    &__container {
+      padding: 47px 80px 45px 78px;
+    }
+
+    &__nav {
+      display: flex;
+    }
+
+    &__title {
+      max-width: 900px;
+      font-size: 57px;
+      line-height: 62px;
+      margin-bottom: 30px;
+    }
+
+    &__body {
+      position: relative;
+    }
+
+    &__arrow {
+      height: 55px;
+      width: 20px;
+      position: absolute;
+      right: -7px;
+      bottom: 40px;
+      background: url(../icons/arrow/arrow-l.png) center / contain no-repeat;
+    }
+  }
+}

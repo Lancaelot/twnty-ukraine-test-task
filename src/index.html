@@ -3,11 +3,185 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>TWNTY Ukraine Test task</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__top">
+          <img
+            class="header__logo"
+            alt="logo"
+            src="../src/icons/logo/logo-l.png"
+          >
+          <div class="burger-menu header__burger-menu">
+            <input id="burger-menu__toggle" type="checkbox">
+            <label class="burger-menu__btn" for="burger-menu__toggle">
+              <span></span>
+            </label>
+          </div>
+          <nav class="nav header__nav">
+            <ul class="nav__list">
+              <li>
+                <a href="#header" class="nav__item">
+                  Agency
+                </a>
+              </li>
+              <li>
+                <a href="#clients" class="nav__item">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#contact" class="nav__item">
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <div class="nav__lang">
+              <div class="nav__de">
+                De
+              </div>
+              /
+              <div class="nav__de">
+                En
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="header__body">
+          <div class="title header__title">
+            Digitales Corporate Marketing
+            für ihre Digital&shy;re&shy;volution: Partner&shy;schaft&shy; lich. Agil. Data-Driven.
+          </div>
+          <div class="text header__text">
+            TWNTY ist Ihre digitale Full-Ser&shy;vice-Unit. Wir agieren ausschließlich mit Datengestützten Maß&shy;nahmen – für den perfekten Return-Of-Invest.
+          </div>
+          <a href="#clients" class="header__arrow">
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="clients" id="clients">
+      <div class="clients__container">
+        <div class="clients__text">
+          Uns vertrauen namhafte Konzerne,
+          zukunftsorien&shy; tierte Startups, mittelständische Unternehmen und
+          bekannte Marken – gehören sie dazu!
+        </div>
+        <div class="clients__brands">
+          <a href="#" class="clients__logo clients__logo--tilray">
+            <div class="clients__tilray"></div>
+          </a>
+          <a href="#" class="clients__logo clients__logo--apple">
+            <div class="clients__apple"></div>
+          </a>
+          <a href="#" class="clients__logo clients__logo--bauer">
+            <div class="clients__bauer"></div>
+          </a>
+          <a href="#" class="clients__logo clients__logo--audi">
+            <div class="clients__audi"></div>
+          </a>
+          <a href="#" class="clients__logo clients__logo--subaru">
+            <div class="clients__subaru"></div>
+          </a>
+          <a href="#" class="clients__logo clients__logo--bench">
+            <div class="clients__bench"></div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <div class="contact__body">
+          <h2 class="title contact__title">
+            Kontakt<br>
+            – let‘s talk
+          </h2>
+          <a href="https://goo.gl/maps/4nJsRW2fEZBnXVVr7" class="contact__address">
+            TWNTY Digital GmbH
+            Pfaffendorfer Straße 26
+            04105 Leipzig/Germany
+          </a>
+          <a href="tel:+49 (0)341 221 796 00" class="contact__phone">
+            +49 (0)341 221 796 00
+          </a>
+          <a href="mailto:info@twnty.de" class="contact__email">
+            info@twnty.de
+          </a>
+          <div class="contact__row">
+            <a href="#" class="contact__linkedin">LinkedIn</a>
+            <a href="#" class="contact__xing">Xing</a>
+            <a href="#" class="contact__instagram">Instagram</a>
+          </div>
+        </div>
+        <form class="feedback contact__form">
+          <div class="feedback__top">
+            <input
+              id="name"
+              type="text"
+              placeholder="Name"
+              class="feedback__input feedback__name"
+            >
+            <input
+              id="email"
+              type="email"
+              placeholder="E-Mail"
+              class="feedback__input feedback__email"
+            >
+          </div>
+          <input
+            type="text"
+            id="Betreff"
+            placeholder="Betreff"
+            class="feedback__input"
+          >
+          <textarea
+            id="Nachricht"
+            placeholder="Nachricht"
+            class="feedback__textarea"
+          >
+          </textarea>
+          <div class="feedback__bottom">
+            <div class="feedback__agreement">
+              <input
+                type="checkbox"
+                name="terms"
+                id="terms"
+                class="feedback__checkbox"
+              >
+              <label for="terms">
+                <div class="feedback__agreement--text">
+                  Ich habe die <a href="/terms">Datenschutzbestimmungen</a>
+                  zur Kenntnis genommen.
+                </div>
+              </label>
+              </input>
+            </div>
+            <button type="submit" class="feedback__button">
+              Senden
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <img
+          alt="twnty"
+          src="../src/icons/footer/logo.png"
+          class="footer__logo">
+        <div class="footer__body">
+          <div class="footer__info">
+            <span>Impressum</span>
+            <span>Datenschutz</span>
+          </div>
+          <div class="footer__copyright">
+            © 2020
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
